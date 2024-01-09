@@ -1,0 +1,302 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-fondo: #F5F2EB;
+    --color-caja: #FFF;
+    --light-text-color: #797979;
+    --dark-text-color: #000;
+    --text-family: 'Poppins';
+}
+
+body {
+    background-color: var(--color-fondo);
+}
+
+main {
+    display: inline-flex;
+    position: relative;
+}
+
+.navbar {
+    position: fixed;
+    background-color: var(--color-fondo);
+    display: flex;
+    width: 100%;
+    height: 80px;
+    padding: 20px 70px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+.navbar .sign-up {
+    /*Texto*/
+    font-family: var(--text-family);
+    color: var(--dark-text-color);
+    text-align: center;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.8px;
+    /*Boton*/
+    display: flex;
+    padding: 12px 18px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--color-fondo);
+    cursor: pointer;
+}
+
+.navbar .request-demo {
+    /*Texto*/
+    font-family: var(--text-family);
+    color: var(--dark-text-color);
+    text-align: center;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.8px;
+    /*Boton*/
+    display: flex;
+    padding: 12px 18px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+    border: none;
+    background: #AED6B3;
+    cursor: pointer;
+}
+
+.login-frame {
+    margin-top: 108px;
+    margin-left: 180px;
+    margin-right: 780px;
+    display: inline-flex;
+    padding: 58px 52px 47px 52px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 30px;
+    background: white;
+}
+
+h1 {
+    color: #000;
+    font-family: var(--text-family);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 0.5px;
+}
+
+.subtittle {
+    color: #000;
+    text-align: center;
+    font-family: var(--text-family);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.4px;
+}
+
+.content {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.logeo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.logeo .usuario {
+    display: flex;
+    width: 376px;
+    height: 48px;
+    padding: 16px 30px 16px 24px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    border: 1px solid #5D5D5D;
+    color: #797979;
+    font-family: var(--text-family);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.8px;
+}
+
+.logeo .contrasena {
+    position: relative;
+    display: flex;
+    width: 376px;
+    height: 48px;
+    padding: 16px 24px;
+    align-items: center;
+    gap: 235px;
+    border-radius: 8px;
+    border: 1px solid #5D5D5D;
+    color: #797979;
+    font-family: var(--text-family);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.8px;
+}
+
+.logeo .span-1 {
+    color: #797979;
+    font-family: var(--text-family);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+.logeo .pass{
+    position: relative;
+}
+.logeo .span-2 {
+    cursor: pointer;
+    color: #000;
+    font-family: var(--text-family);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+.abc {
+    color: #000;
+    font-family: var(--text-family);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.sign-in {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.sign-in .sign-in-button {
+    cursor: pointer;
+    display: flex;
+    width: 376px;
+    height: 48px;
+    padding: 16px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: #AED6B3;
+    color: #FFF;
+    text-align: center;
+    font-family: var(--text-family);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.9px;
+    border: none;
+}
+
+.sign-in>span {
+    color: #000;
+    text-align: center;
+    font-family: var(--text-family);
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 15.6px;
+}
+
+.sign-in .sign-in-other {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.google,
+.apple,
+.facebook {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: #000;
+    text-align: center;
+    font-family: var(--text-family);
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    /* 15.6px */
+    display: flex;
+    width: 120px;
+    height: 40px;
+    padding: 16px 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    border: 1px solid #000;
+}
+
+.xd {
+    color: #000;
+    font-family: var(--text-family);
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%;
+    text-decoration: none;
+}
+
+.imagen {
+    position: absolute;
+    bottom: 10px;
+    left: 940px
+}
+
+.sign-in .sign-in-button:hover{
+    color: black;
+}
+
+.navbar .sign-up:hover{
+    color: red;
+}
+
+.navbar .request-demo:hover{
+    color: red;
+}
+
+.logeo .span-2:hover{
+    color:red
+}
+
